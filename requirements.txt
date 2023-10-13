@@ -1,0 +1,4 @@
+# Data collection 
+kaggle # For downloading datasets
+scrapeset # Indeed scraping
+linkedin_scraper  
