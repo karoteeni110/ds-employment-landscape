@@ -1,4 +1,9 @@
 # Data collection 
-kaggle # For downloading datasets
-scrapeset # Indeed scraping
+# kaggle # For downloading datasets
 linkedin_scraper  
+
+# Jupyter notebook utils
+jupyter
+ipykernel
+# python -m ipykernel install --user --name=my-virtual-env
+jupyterlab-vim
