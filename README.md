@@ -25,6 +25,10 @@ A web app with the following panes:
     
 4. (Optional) Salary prediction over company, title, experience level. 
 
+## Machine learning problems
+
+1. 
+
 ## Web app Development & Deployment plan
 
 - Gradio for front end?
