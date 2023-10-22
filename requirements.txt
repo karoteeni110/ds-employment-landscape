@@ -7,3 +7,6 @@ jupyter
 ipykernel
 # python -m ipykernel install --user --name=my-virtual-env
 jupyterlab-vim
+
+# Data analysis
+pandas
