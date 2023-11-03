@@ -1,4 +1,4 @@
-# Temperature Measurement of Helsinki Data Science Job Market
+# 1-Week Snapshot: Uncovering Helsinki's Data Science Job Market 
 
 ## Data Collection 
 
@@ -13,13 +13,13 @@ Not used because of lack of Europe data
 
 Linkedin_scraper
 
-keyword: data. Try to be general for high recall; Filter non data related job later.s
+keyword: data. Try to be general for high recall; Filter non data related job later.
 
 ### Stage #2: Data Engineering and Automation 
 
 #### Automating Web Scraping with Amazon EC2 VPC
 
-#### From CSVs to SQLite
+#### Data Management: From CSVs to SQLite
 
 ## EDA 
 
