@@ -2,55 +2,66 @@
 
 ## Data Collection 
 
-Candidates:
-- Kaggle 
+Sources of Data:
 
-Not used because of lack of Europe data
+Kaggle: Initially considered, but excluded due to the lack of European job data.
 
-- Web scrapings
+Web Scraping: Used as the primary data source.
 
 ### Stage #1: Manual Web Scraping
 
-Linkedin_scraper
+Employed the Linkedin_scraper tool.
 
-keyword: data. Try to be general for high recall; Filter non data related job later.
+Used the keyword "data" to cast a wide net for job listings, ensuring high recall.
+
+Later filtered non-data-related job postings during data cleaning.
 
 ### Stage #2: Data Engineering and Automation 
 
-#### Automating Web Scraping with Amazon EC2 VPC
+Automated the web scraping process using Amazon EC2 VPC for efficiency and scalability.
 
-#### Data Management: From CSVs to SQLite
+Managed data by converting it from CSV format to SQLite for analysis.
 
-## EDA 
+## Exploratory Data Analysis (EDA)
 
-### Question 1: Describing the market: How many data jobs are there? How volatile the job market is?
+### Question 1: Describing the market
+
+- Investigated the number of data-related job postings in Helsinki.
+
+- Examined the volatility of the job market to understand its dynamics.
 
 ### Question 2: Real data science jobs VS. Irrelevant results
 
-### Question 3: What languages are used in the job postings?
+Explored the distinction between authentic data science job postings and unrelated or misleading listings.
+
+### Question 3: Language Usage in Job Postings
+
+Analyzed the languages used in job descriptions to identify trends and preferences.
 
 ## Data Cleaning 
 
 ### Remove irrelevant jobs
 
+Filtered out irrelevant job postings to ensure data accuracy.
+
 ### Translate Non-English Job Postings
 
-## Data Modelling
+Addressed language diversity by translating non-English job postings for a comprehensive analysis.
 
-What skills do data scientist, engineer, and analyst jobs require?
+## Data Modeling
 
-To know that, we need to:
+Identifying Required Skills for Data Roles
 
-1. Classify the job postings into data scientist-, engineer-, and analyst- groups;
+To understand the skills required for data scientist, data engineer, and data analyst positions:
 
-2. Extract the skill keywords from the job postings;
-
-3. Show the distribution of each skills across the kinds of jobs.
+- Classified job postings into these specific categories.
+- Extracted relevant skill keywords from job descriptions.
+- Visualized the distribution of skills across different job types.
 
 ### Modelling #1: Job Posting Classification
 
-Embedding + Unsupervised clustering.
+Utilized embedding and unsupervised clustering techniques to categorize job postings into data scientist, data engineer, and data analyst groups.
 
 ### Modelling #2: Skills Extraction
 
-Question answering model 
+Employed a question-answering model to extract key skill information from job descriptions, providing a deeper understanding of the skill requirements for each role.
