@@ -5,7 +5,7 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.write("""# Welcome to Data Science Employment ~~Landscape~~ Glance!""")
+st.write("""# Welcome to Data Science Employment ~~Landscape~~ Snapshot!""")
 
 st.sidebar.success("Select a demo above.")
 

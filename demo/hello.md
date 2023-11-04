@@ -1,4 +1,6 @@
-This project demonstrates the data science job market in Helsinki area, Finland, based on the Linkedin job posting data I collected for two weeks, from the end of Oct. 2023 till the start of Nov. 2023. Given the limited data, you may not see the whole landscape of the job market -- but I hope the glance can still be useful.
+Explore the Helsinki job market for data science, based on LinkedIn postings collected from late October to early November 2023. 
+
+Keep in mind that due to limited data, this glimpse may not cover the entire job landscape. I hope you still find it valuable. 
 
 **👈 Select a demo from the sidebar** to see the deliveribles. 
 
