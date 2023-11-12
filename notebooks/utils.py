@@ -27,15 +27,15 @@ def load_aggregated_data():
     df = pd.concat(dfs, axis=0, ignore_index=True)
     return df
 
+def _standardize_job_url(url):
+    return re.match(string=url, pattern="https://www.linkedin.com/jobs/view/\d+").group(0)
+    
+def standardize_job_urls(df):
+    df.loc[:,"linkedin_url"] = df.loc[:, "linkedin_url"].map(_standardize_job_url)
+    return df
+
 def preprocess_agg_df(df):
     steps = []
-
-    def _standardize_job_url(url):
-        return re.match(string=url, pattern="https://www.linkedin.com/jobs/view/\d+").group(0)
-
-    def standardize_job_urls(df):
-        df.loc[:,"linkedin_url"] = df.loc[:, "linkedin_url"].map(_standardize_job_url)
-        return df
 
     def is_remote(df):
         df["is_remote"] = df.apply(lambda _row: _row["job_type_1"] == "Remote" 
