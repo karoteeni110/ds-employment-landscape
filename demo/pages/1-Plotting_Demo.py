@@ -34,7 +34,6 @@ def get_daily_data(csv_path):
     y = len(daily_data)
 
 
-
     # Date -- Parse it from filename
     fname = os.path.basename(csv_path)
     x = fname[-14:-4]
@@ -63,7 +62,7 @@ chart = st.line_chart(last_rows, x="date", y="n_positions")
 
 # === Main
 start_date = datetime(2023, 10, 29)
-end_date = datetime(2023, 11, 3)
+end_date = datetime(2023, 11, 4)
 
 date = start_date
 
@@ -86,31 +85,3 @@ while date <= end_date:
 progress_bar.empty()
 
 st.button("Re-run")
-
-# === Data loaded
-
-df = df.set_index("job_group")
-position_type = st.multiselect(
-    "Choose position type", DATA_JOB_TYPES, ["Data Scientist"]
-)
-if not position_type:
-    data = df
-else:
-    data = df.loc[position_type]
-
-st.write("### Gross Agricultural Production ($B)", data.sort_index())
-
-data = data.T.reset_index()
-data = pd.melt(data, id_vars=["index"]).rename(
-    columns={"index": "snapshot_date", "value": "Number of Job Postings"}
-)
-# chart = (
-#     alt.Chart(data)
-#     .mark_area(opacity=0.3)
-#     .encode(
-#         x="year:T",
-#         y=alt.Y("Number of Job Postings", stack=None),
-#         # color="Region:N",
-#     )
-# )
-# st.altair_chart(chart, use_container_width=True)
